@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,700;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #83ffbc87;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(106, 145, 109), rgb(203, 253, 212));
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.dark-mode {
+    background-image: linear-gradient(to left, rgb(38, 71, 43), rgb(2, 29, 2));
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+}
+
+body {
+    transition: background-color 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    color: #333;
+}
+
+.dark-mode,
+.dark-mode h1,
+.dark-mode h4 {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+header {
+    background-color: #83ffbc87;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    float: right;
+    margin: auto 0;
+}
+
+li {
+    font-size: 16px;
+    margin: 0 120px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #05aa5187;
+    margin-top: 20px;
+}
+
+.imagem-logo {
+    margin-top: 20px;
+}
+
+.imagem-logo button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f0f0f087;
+    margin-inline: 40px;
+    max-width: 60px;
+    max-height: 60px;
+
+}
+
+.imagem-logo button img {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #08311b87;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+.imagem-logo img {
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    margin-inline-start: 40px;
+}
+
+.formulario,
+.formulario legend, 
+.formulario p, 
+.inputbox,
+.inputbox .inputlabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.formulario {
+    color: #fff;
+    background-color: rgb(55, 54, 54);
+    padding: 15px;
+    border-radius: 15px;
+    width: 405px;
+    margin-top: 80px;
+}
+
+fieldset {
+    border: 5px solid rgb(77, 121, 1);
+    width: 100%;
+}
+
+legend {
+    border: 1px solid rgb(93, 145, 5);
+    padding: 10px;
+    background-color: rgb(71, 110, 3);
+    border-radius: 8px;
+}
+
+legend h3 {
+    text-align: left;
+}
+
+.inputbox label,
+.inputbox input {
+    margin-inline: 10px;
+    text-align: left;
+}
+
+.inputbox p {
+    font-size: 14px;
+    margin: 20px 30px 20px 30px;
+    text-align: left;
+}
+
+.inputbox .inputlabel {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.input-user  {
+    width: 80%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(77, 121, 1);
+    outline: none;
+    color: rgb(96, 97, 95);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.input-user:current {
+    color: #333;
+}
+
+.checkbox aside {
+    display: block;
+    margin: 5px 0 5px 40px;
+}
+
+.checkbox {
+    margin: 0 22px;
+    margin-inline: 22px;
+}
+
+aside p {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 98%;
+}
+
+.checkbox label,
+.checkbox input,
+.checkbox p {
+    margin: 5px;
+
+}
+
+.checkbox p {
+    text-align: left;
+    font-size: 16px;
+}
+
+article #button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 20px auto;
+
+}
+
+#button {
+    background-image: linear-gradient(to right, rgb(27, 255, 57), rgb(0, 253, 76));
+    width: 80%;
+    border: 1px solid rgb(27, 255, 57);
+    padding: 15px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 99px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#button:hover {
+    background-image: linear-gradient(to right, rgb(46, 240, 182), rgb(19, 195, 78));
+}
+
+
+footer {
+    background-color: #83ffbc87;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    margin-top: 160px;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+}
+
+footer {
+    background-color: #83ffbc87;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    margin-top: 80px;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia img {
+    margin-top: 10px;
+    margin-inline: 10px;
+    width: 28px;
+    height: 28px;
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    .imagem-logo img {
+        width: 80%;
+    }
+}

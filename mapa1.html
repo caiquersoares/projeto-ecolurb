@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="mapa.css" />
+  <link rel="shortcut icon" href="logo-simbolo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <title>EcoLurb - Encontre um posto de coleta</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="logo-simbolo.png" alt="Logo">
+      </a>
+    </div>
+    <div>
+      <nav class="header_links">
+        <a href="formulario.html">Formulário</a>
+        <a href="conscientização.html">Guia de descarte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="content_container">
+      <h1>Importância da reciclagem</h1>
+      <p>
+        A importância da reciclagem. Já pensou em um mundo sem água? Um lugar
+        onde você tem sede, mas não tem o que beber, tem fome, mas não tem
+        como preparar nada para comer, onde precisa tomar banho, mas não tem
+        como se molhar, um mundo que não se pode nem sequer plantar
+        porque a chuva ácida corrói a plantação? Ou então que tal imaginar um
+        planeta imundo, onde você caminha pelas ruas e só vê lixo, onde
+        terríveis enchentes tomam as casas e latinhas de alumínio boiam ao
+        lado de ratinhos mortos como se fossem brinquedos na banheira de uma
+        criança, um mundo onde animais marinhos usam tampinhas de garrafa no
+        lugar de conchas e as tartarugas nadam ao lado de canudinhos de
+        plástico. Assustador não é? Mas e se eu te falasse que isso já está se
+        tornando realidade. Não, não é exagero. Apenas 3% da água do planeta é
+        potável, desses 3% um terço está poluída e imprópria para consumo,
+        isso quer dizer que além de uma quantidade limitada de água potável
+        ainda estamos poluindo o pouco que temos. Sem contar a quantidade de
+        lixo descartado em lugares incorretos, que entope bueiros, causa
+        enchentes e ainda prejudica pobres animais que não tem culpa das ações
+        humanas. Ao reciclar evitamos essa situação, evitamos que a água seja
+        poluída, evitamos o lixo em lugar incorreto, geramos menos lixo,
+        preservamos nossos recursos naturais, cuidamos de nosso planeta e dos
+        seres que aqui vivem. E você pode fazer a diferença, pode nos ajudar
+        nessa missão de ajudar o planeta que vivemos. Faça parte desse
+        projeto. Faça parte da EcoLurb.
+      </p>
+    </div>
+    <div id="map"></div>
+  </main>
+
+  <!-- <script>
+    ((g) => {
+      var h,
+        a,
+        k,
+        p = "The Google Maps JavaScript API",
+        c = "google",
+        l = "importLibrary",
+        q = "__ib__",
+        m = document,
+        b = window;
+      b = b[c] || (b[c] = {});
+      var d = b.maps || (b.maps = {}),
+        r = new Set(),
+        e = new URLSearchParams(),
+        u = () =>
+          h ||
+          (h = new Promise(async (f, n) => {
+            await (a = m.createElement("script"));
+            e.set("libraries", [...r] + "");
+            for (k in g)
+              e.set(
+                k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                g[k]
+              );
+            e.set("callback", c + ".maps." + q);
+            a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+            d[q] = f;
+            a.onerror = () => (h = n(Error(p + " could not load.")));
+            a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+            m.head.append(a);
+          }));
+      d[l]
+        ? console.warn(p + " only loads once. Ignoring:", g)
+        : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+    })({
+      key: "AIzaSyB4u0Nik-XUSzSCpscKJhZU2lcnvTBO0Nc",
+    });
+  </script>
+  <script type="module" src="mapa.js"></script>
+</body> -->
+<footer>
+  <div class="socialmedia">
+      <a href="https://www.facebook.com/" target="_blank"><img src="facebook.svg" alt="facebook ecolurb"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.svg" alt="instagram ecolurb"></a>
+      <a href="https://web.whatsapp.com/" target="_blank"><img src="whatsapp-icon.svg" alt="whatsapp ecolurb"></a>
+      <a href="https://twitter.com/" target="_blank"><img src="twitter-icon.svg" alt="twitter ecolurb"></a>
+  </div>
+  <small>&reg; Ecolurb - &copy; Todos os direitos reservados</small>
+</footer>
+
+</html>

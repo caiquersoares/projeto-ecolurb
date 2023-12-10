@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EcoLurb - Preencha o formulário</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <link rel="shortcut icon" href="logo-simbolo.png" type="image/x-icon">
+    <script src="formulario.js" defer></script>
+</head>
+<div id="cabecalho">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="mapa.html">Postos de coleta</a></li>
+                <li><a href="conscientização.html">Guia de descarte</a></li>
+                <li><a href="educacional.html">Conteúdo educacional</a></li>
+                <article class="imagem-logo">
+                    <button id="toggleButton"><img src="dark-mode.svg" alt=""></button>
+                </article>
+            </ul>
+        </nav>
+        <a href="index.html">
+            <img src="logo-simbolo.png" alt="Logo" title="logo">
+        </a>
+    </header>
+</div>
+
+<body>
+    <main>
+        <section>
+            <form id="myForm" class="formulario" onsubmit="salvarDados(); return false;">
+                <fieldset>
+                    <legend>
+                        <h3>Formulário - Programa Revitalize</h3>
+                    </legend>
+                    <article class="inputbox">
+                        <p>
+                            O Programa Revitalize, é um programa onde você participa doando material reciclável que não
+                            te serve
+                            e coleta material reciclável que tenha alguma finalidade para você. Dessa forma, criamos uma
+                            hub sustentável onde todos
+                            saem ganhando e principalmente, a natureza.
+                        </p>
+                            <label for="nome" class="inputlabel">
+                                <b>Nome completo:</b>
+                            </label>
+                            <input type="text" id="nome" name="nome" class="input-user"
+                                placeholder="Digite seu nome completo." required>
+
+                            <label for="endereco" class="inputlabel">
+                                <b>Endereço:</b>
+                            </label>
+                            <input type="text" name="endereco" id="endereco" class="input-user"
+                                placeholder="Informe seu endereço." required>
+
+                            <label for="email" class="inputlabel">
+                                <b>E-mail:</b>
+                            </label>
+                            <input type="email" id="email" name="email" class="input-user"
+                                placeholder="Ex.: ecolurb@net.com" required>
+
+                            <label for="telefone" class="inputlabel">
+                                <b>Telefone:</b>
+                            </label>
+                            <input type="tel" name="telefone" id="telefone" class="input-user" placeholder="Ex.: (xx)xxxxxx-xxxxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                                required>
+
+                            <label for="zona" class="inputlabel">
+                                <b>Escolha em qual região deseja coletar/depositar os materiais:</b>
+                            </label>
+                            <select name="zona" class="input-user" id="zona" required>
+                                <option value="" selected>Selecione o posto de coleta</option>
+                                <option value="centro">Centro</option>
+                                <option value="zs">Zona Norte</option>
+                                <option value="zl">Zona Leste</option>
+                                <option value="zo">Zona Oeste</option>
+                                <option value="zs">Zona Sul</option>
+                            </select>
+
+                            <div class="checkbox">
+                                <strong><p>Escolha o(s) material(ais) que deseja doar:</p></strong>
+                                <input type="checkbox" name="material_doar[]" id="metal" value="Metal">
+                                <label for="metal" class="metal"><i>Metal</i></label>
+
+                                <input type="checkbox" name="material_doar[]" id="papel" value="Papel">
+                                <label for="papel" class="metal"><i>Papel</i></label>
+
+                                <input type="checkbox" name="material_doar[]" id="vidro" value="Vidro">
+                                <label for="vidro" class="metal"><i>Vidro</i></label>
+
+                                <input type="checkbox" name="material_doar[]" id="plastico" value="Plástico">
+                                <label for="plastico" class="metal"><i>Plástico</i></label>
+
+                                <input type="checkbox" name="outros" id="outros">
+                                <label for="outros">Outros</label>
+                                <textarea name="outros_descricao" id="outros_descricao" cols="40" rows="2"
+                                    placeholder="Descreva outro material..."></textarea>
+                            </div>
+
+                            <div class="checkbox">
+                                <strong><p>Escolha o(s) material(ais) que deseja coletar:</p></strong>
+                                <input type="checkbox" name="material_coletar[]" id="metal_coletar" value="Metal">
+                                <label for="metal_coletar" class="metal"><i>Metal</i></label>
+
+                                <input type="checkbox" name="material_coletar[]" id="papel_coletar" value="Papel">
+                                <label for="papel_coletar" class="metal"><i>Papel</i></label>
+
+                                <input type="checkbox" name="material_coletar[]" id="vidro_coletar" value="Vidro">
+                                <label for="vidro_coletar" class="metal"><i>Vidro</i></label>
+
+                                <input type="checkbox" name="material_coletar[]" id="plastico_coletar" value="Plástico">
+                                <label for="plastico_coletar" class="metal"><i>Plástico</i></label>
+
+                                <input type="checkbox" name="outros_coletar" id="outros_coletar">
+                                <label for="outros_coletar">Outros</label>
+                                <textarea name="outros_descricao_coletar" id="outros_descricao_coletar" cols="40"
+                                    rows="2" placeholder="Descreva outro material..."></textarea>
+                            </div>
+
+                            <button type="button" id="button" onclick="salvarDados()">Enviar dados</button>
+                            </div>
+                    </article>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.svg" alt="facebook ecolurb"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.svg"
+                    alt="instagram ecolurb"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="whatsapp-icon.svg" alt="whatsapp ecolurb"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="twitter-icon.svg" alt="twitter ecolurb"></a>
+        </div>
+        <small>&reg; Ecolurb - &copy; Todos os direitos reservados</small>
+        <script src="darkmode.js"></script>
+
+    </footer>
+</body>
