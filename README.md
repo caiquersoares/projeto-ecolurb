@@ -37,7 +37,7 @@ A aplicação web é um projeto focado em sustentabilidade social usando a recic
 
 # Hospedagem
 
-* [Insira o endereço eletrônico público de acesso ao conteúdo publicado](https://caiquersoares.github.io/projeto-ecolurb/). 
+* (https://caiquersoares.github.io/projeto-ecolurb/). 
 
 # Código-Fonte
 
